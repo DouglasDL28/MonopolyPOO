@@ -42,7 +42,7 @@ public class Board {
                 }
             }
         }
-        return winner;
+        return null; //REVISAR
     }
 
     public void changeTurn() {
