@@ -33,16 +33,15 @@ public class Board {
         return hasWinner;
     }
 
-    public Player getWinner() {
-        Player winner;
+    public int getWinner() {
         if (this.hasWinner()) {
             for (Player player : players) {
                 if (player.getMoney() == 0) {
-                    winner = player;
+                    return 1;
                 }
             }
         }
-        return null; //REVISAR
+        return 0;
     }
 
     public void changeTurn() {

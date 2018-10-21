@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 
@@ -16,12 +18,12 @@
         <ColumnConstraints />
         <ColumnConstraints />
         <ColumnConstraints />
-        <ColumnConstraints />
-        <ColumnConstraints />
+        <ColumnConstraints maxWidth="742.0" minWidth="638.0" prefWidth="736.0" />
+        <ColumnConstraints maxWidth="228.0" minWidth="124.0" prefWidth="130.0" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints />
-        <RowConstraints />
+        <RowConstraints maxHeight="654.0" minHeight="654.0" prefHeight="654.0" />
+        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
         <RowConstraints />
         <RowConstraints />
         <RowConstraints />
@@ -30,10 +32,10 @@
         <RowConstraints />
     </rowConstraints>
     <children>
-        <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-        <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-        <GridPane gridLinesVisible="true" prefHeight="592.0" prefWidth="758.0" GridPane.columnIndex="5">
+        <Button fx:id="moveButton" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" text="Role dice" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button mnemonicParsing="false" text="Buy Porperty" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+        <Button mnemonicParsing="false" text="End Turn" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+        <GridPane gridLinesVisible="true" prefHeight="654.0" prefWidth="762.0" GridPane.columnIndex="5">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -46,6 +48,7 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             </columnConstraints>
             <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -60,183 +63,514 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
-            <children>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1e1e" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="55.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="53.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="52.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="53.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="8">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="9">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10">
-                    <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0">
-                            <children>
-                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                            </children></HBox>
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5b358" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa11e" height="55.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa11e" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="203.0" GridPane.rowIndex="4">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa11e" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="6">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1ebd" height="55.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1ebd" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="8">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1ebd" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="10">
-                    <children>
-                        <HBox prefHeight="100.0" prefWidth="200.0">
-                            <children>
-                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="22.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                            </children>
-                        </HBox>
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1effe5" height="19.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="20.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1effe5" height="20.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="22.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="21.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SADDLEBROWN" height="21.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="21.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SADDLEBROWN" height="21.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="21.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="9">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="8">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="54.0" stroke="BLACK" strokeType="INSIDE" width="69.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="5">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#868686" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="53.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="56.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="55.0" stroke="BLACK" strokeType="INSIDE" width="70.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="56.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
-                    </children></HBox>
-                <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
-                    <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1effe5" height="20.0" stroke="BLACK" strokeType="INSIDE" width="68.0" />
-                    </children>
-                </HBox>
-            </children>
+         <children>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="-7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label10" layoutX="14.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="-6.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label9" layoutX="14.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label8" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label7" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label6" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label5" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="23.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label4" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label3" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label2" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="-5.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label1" layoutX="9.0" layoutY="9.0" prefHeight="23.0" prefWidth="39.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="2">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label23" layoutX="14.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="1">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-7.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label22" layoutX="14.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="3">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label24" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="4">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label25" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="5">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="label" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label26" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="6">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="23.0" layoutX="-8.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label27" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label28" layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="-7.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label20" layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label19" layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label18" layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label17" layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="5">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label16" layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="6">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label15" layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="7">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label14" layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="8">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label13" layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.7540983606557377" prefHeight="160.0" prefWidth="200.0" GridPane.rowIndex="9">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="label12" layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="-4.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="3">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="-6.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="21.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="5">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="6">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="7">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="-10.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="8">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="9">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                     </children></AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="20.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.rowIndex="10">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label11" layoutX="14.0" layoutY="11.0" text="Label" />
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label21" layoutX="14.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="11">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="12.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="11" GridPane.rowIndex="10">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <Label fx:id="label" layoutX="9.0" layoutY="6.0" prefHeight="27.0" prefWidth="39.0" text="Label" />
+                     </children></AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
         </GridPane>
-        <TableView prefHeight="1222.0" prefWidth="159.0" GridPane.columnIndex="1">
+        <TableView prefHeight="656.0" prefWidth="237.0" GridPane.columnIndex="1">
             <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
             </columns>
         </TableView>
-        <TableView prefHeight="645.0" prefWidth="0.0" GridPane.columnIndex="6">
+        <TableView prefHeight="656.0" prefWidth="244.0" GridPane.columnIndex="6">
             <columns>
                 <TableColumn prefWidth="75.0" text="C1" />
             </columns>
