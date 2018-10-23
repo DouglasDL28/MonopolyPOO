@@ -97,6 +97,15 @@ public class Board {
         }
     }
 
+    public Property findPropertybyIndex (Integer X, Integer Y) {
+        for (int i = 0; i < this.cells.size(); i++) {
+            if (this.cells.get(i).getRow() == Y && this.cells.get(i).getColumn() == X) {
+                return this.cells.get(i);
+            }
+        }
+        return null;
+    }
+
 
 
 }
