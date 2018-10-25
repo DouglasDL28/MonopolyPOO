@@ -18,7 +18,9 @@ public class PrivateProperty extends Property {
         this.Owned=true;
     }
 
-    public void sell () { }
+    public void sell () {this.Owned = true;}
+
+    public int getBuyingPrice (){return this.BuyingPrice;}
 
     public void buyHouse () {}
 

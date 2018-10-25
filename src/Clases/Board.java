@@ -54,6 +54,34 @@ public class Board {
         }
     }
 
+    public void buyPropertyToBoard (PrivateProperty property, Player player) {
+        if (this.freeCells.size() > 0) {
+            freeCells.remove(property);
+            player.buyProperty(property);
+        }
+    } // Comprar una propiedad del tablero
+
+    public void sellPropertyToBoard (PrivateProperty property, Player player) {
+        freeCells.add(property);
+        player.sellProperty(property);
+    } // Vender una propiedad del tablero.
+
+    public void propertyExchange (PrivateProperty property, Player player1, Player player2) {
+        if (player1.getProperties().contains(property)) {
+            player1.sellProperty(property);
+            player1.sellProperty(property);
+        }
+    } // Intercambio de una propiedad entre jugadores.
+
+    public Property findPropertybyIndex (Integer X, Integer Y) {
+        for (Property property : cells) {
+            if (property.getRow() == Y && property.getColumn() == X) {
+                return property;
+            }
+        }
+        return null;
+    }
+
     public ArrayList<Player> getPlayers() {
         return players;
     } //Obtener los jugadores.
@@ -89,23 +117,5 @@ public class Board {
     public ArrayList<PrivateProperty> getFreeCells() {
         return freeCells;
     }
-
-    public void buyProperty(PrivateProperty property, Player player) {
-        if (this.freeCells.size() > 0) {
-            freeCells.remove(property);
-            player.addProperty(property);
-        }
-    }
-
-    public Property findPropertybyIndex (Integer X, Integer Y) {
-        for (int i = 0; i < this.cells.size(); i++) {
-            if (this.cells.get(i).getRow() == Y && this.cells.get(i).getColumn() == X) {
-                return this.cells.get(i);
-            }
-        }
-        return null;
-    }
-
-
 
 }
