@@ -47,7 +47,7 @@ public class Player {
     } //Cambia el estado de inPrison.
 
     public void move (int diceNumber) {
-        for(int i =0 ; i< diceNumber; i++) {
+        for(int i = 0 ; i < diceNumber; i++) {
             if (this.Yaxis == 0 && this.Xaxis < 11) { this.Xaxis += 1; } //Si Y = 0 y X < 11 muevase 1 a la derecha.
             else if (this.Yaxis == 11 && this.Xaxis > 0) {this.Xaxis -= 1;} //Si Y = 12 y X > 0 muevase 1 a la izquierda.
             else if (this.Xaxis == 0 && this.Yaxis > 0) {this.Yaxis -= 1;} // Si X = 0 y Y > 0 baje 1 posición.
