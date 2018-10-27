@@ -7,7 +7,7 @@ public class Board {
     private ArrayList<Player> players;
     private ArrayList<Property> cells;
     private Integer bank;
-    private Boolean PlayerOneTurn;
+    private Boolean PlayerOneTurn = true;
     private Integer Height;
     private Integer Width;
     private ArrayList<PrivateProperty> freeCells;
