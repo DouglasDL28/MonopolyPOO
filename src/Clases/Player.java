@@ -48,11 +48,11 @@ public class Player {
 
     public void move (int diceNumber) {
         for(int i = 0 ; i < diceNumber; i++) {
-            if (this.Yaxis == 0 && this.Xaxis < 11) { this.Xaxis += 1; } //Si Y = 0 y X < 11 muevase 1 a la derecha.
-            else if (this.Yaxis == 11 && this.Xaxis > 0) {this.Xaxis -= 1;} //Si Y = 12 y X > 0 muevase 1 a la izquierda.
+            if (this.Yaxis == 0 && this.Xaxis < 10) { this.Xaxis += 1; } //Si Y = 0 y X < 11 muevase 1 a la derecha.
+            else if (this.Yaxis == 10 && this.Xaxis > 0) {this.Xaxis -= 1;} //Si Y = 12 y X > 0 muevase 1 a la izquierda.
             else if (this.Xaxis == 0 && this.Yaxis > 0) {this.Yaxis -= 1;} // Si X = 0 y Y > 0 baje 1 posición.
-            else if (this.Xaxis == 11 && this.Yaxis < 12) {this.Yaxis += 1;} // Si X = 11 y Y < 12 suba 1 posición.
-            if(this.Yaxis == 0 && this.Xaxis == 11) {this.money += 100;} // Si pasa por la casilla GO, gana Q.200
+            else if (this.Xaxis == 10 && this.Yaxis < 10) {this.Yaxis += 1;} // Si X = 11 y Y < 12 suba 1 posición.
+            if(this.Yaxis == 0 && this.Xaxis == 10) {this.money += 200;} // Si pasa por la casilla GO, gana Q.200
         }
     }
 }
