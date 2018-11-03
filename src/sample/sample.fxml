@@ -238,7 +238,7 @@
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
-                  <AnchorPane fx:id="label" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                  <AnchorPane fx:id="label50" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
                         <Label fx:id="label26" layoutX="15.0" layoutY="12.0" text="Label" />
                      </children></AnchorPane>
