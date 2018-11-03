@@ -10,7 +10,8 @@ import javafx.scene.control.Label;
 import java.util.ArrayList;
 
 public class Controller {
-    ArrayList<Property> properties = new ArrayList<>();
+
+    public ArrayList<Property> properties = new ArrayList<>();
     PublicProperty go = new PublicProperty("GO", 10, 0);
     PublicProperty jail = new PublicProperty("Jail", 0,0);
     PublicProperty goJail = new PublicProperty("Go to Jail", 10,10);
@@ -57,7 +58,6 @@ public class Controller {
     PrivateProperty mediterraneanAvenue = new PrivateProperty("Mediterranean Avuenue", 9,0, "Brown", 60,60);
     PrivateProperty mediterraneanAvenue = new PrivateProperty("Mediterranean Avuenue", 9,0, "Brown", 60,60);
     PrivateProperty mediterraneanAvenue = new PrivateProperty("Mediterranean Avuenue", 9,0, "Brown", 60,60);
-
 
     @FXML
     Label label;
@@ -143,6 +143,7 @@ public class Controller {
     Button moveButton;
 
      Label[] labels= new Label[]{label, label1, label2, label3, label4, label5, label6, label7, label8, label9, label10,label11,label12,label13,label14,label15,label16,label17,label8,label9,label20,label21,label22,label23,label24,label25,label26,label27,label28,label29,label30,label31,label32,label33,label34,label35,label36,label37,label38,label39};
+     
 
 
 
