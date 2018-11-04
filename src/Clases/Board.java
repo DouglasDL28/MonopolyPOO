@@ -16,14 +16,56 @@ public class Board {
 
     public Board() {
         this.players = new ArrayList<Player>();
+        players.add(new Player(1));
+        players.add(new Player(2));
+
         this.cells = new ArrayList<Property>();
         this.bank = 1000;
         PlayerOneTurn = true;
         Height = 11;
         Width = 11;
         this.freeCells = new ArrayList<PrivateProperty>();
+        freeCells.add(new PrivateProperty("Mediterranean Avenue", 9, 0, "Brown", 60, 60));
+        freeCells.add(new PrivateProperty("Community Chest", 8, 0, "None", 0, 0));
+        freeCells.add(new PrivateProperty("Baltic Avenue", 7, 0, "Brown", 60, 60));
+        freeCells.add(new PrivateProperty("Income Tax", 6, 0, "None", 0, 200));
+        freeCells.add(new PrivateProperty("Reading Railroad", 5, 0, "None", 0, -200));
+        freeCells.add(new PrivateProperty("Oriental Avenue", 4, 0, "Sky Blue", 100, 100));
+        freeCells.add(new PrivateProperty("Chance", 3, 0, "None", 0,0));
+        freeCells.add(new PrivateProperty("Vermont Avenue", 2, 0, "Sky Blue", 100, 100));
+        freeCells.add(new PrivateProperty("Conneticut Avenue", 1, 0, "Sky Blue", 100, 60));
+        freeCells.add(new PrivateProperty("ST. Charles Place", 0, 1, "Pink", 100, 100));
+        freeCells.add(new PrivateProperty("Electric Company", 0, 2, "None", 150, 150));
+        freeCells.add(new PrivateProperty("States Avenue", 0, 3, "Pink", 140, 140));
+        freeCells.add(new PrivateProperty("Virginia Avenue", 0, 4, "Pink", 140, 140));
+        freeCells.add(new PrivateProperty("Pennsylvania Railroad", 0, 5, "None", 200, 200));
+        freeCells.add(new PrivateProperty("ST. James Place", 0, 6, "Orange", 180, 180));
+        freeCells.add(new PrivateProperty("Community Chest", 0, 7, "None", 0, 60));
+        freeCells.add(new PrivateProperty("Tennessee Avenue", 0, 8, "Orange", 180, 180));
+        freeCells.add(new PrivateProperty("New York Avenue", 0, 9, "Orange", 180, 180));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 1, 10, "Red", 220, 220));
+        freeCells.add(new PrivateProperty("Chance", 2, 10, "None", 0, 0));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 3,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 4,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 5,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 6,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 7,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 8,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 9,10, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,9, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,8, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,7, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,6, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,5, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,4, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,3, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,2, "Red", 220,220));
+        freeCells.add(new PrivateProperty("Kentucky Avenue", 10,1, "Red", 220,220));
+
         this.dice = new Dice();
     } //Constructor
+
+
 
     private boolean hasWinner() {
         boolean hasWinner = false;
