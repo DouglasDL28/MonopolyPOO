@@ -3,6 +3,7 @@ package sample;
 import Clases.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -97,12 +98,28 @@ public class Controller {
     Button moveButton;
 
     @FXML
-    public void initialize() {
-        Board tablero = new Board();
+    public void initialize() { }
+
+    Board tablero = new Board();
+    ArrayList<Label>labels= new ArrayList<Label>(){{
+        add(label); add(label1); add(label2); add(label3); add(label4); add(label5); add(label6); add(label7); add(label8); add(label9); add(label10);add(label11);add(label12);add(label13);add(label14);add(label15);add(label16);add(label17);add(label8);add(label9);add(label20);add(label21);add(label22);add(label23);add(label24);add(label25);add(label26);add(label27);add(label28);add(label29);add(label30);add(label31);add(label32);add(label33);add(label34);add(label35);add(label36);add(label37);add(label38);add(label39);
+    }};
+
+    public void move(ActionEvent event){
+        if(tablero.getPlayerOneTurn()){
+           Player playerToMove=tablero.getPlayers().get(0);
+           Integer amountToMove= tablero.getDice().roll();
+           playerToMove.move(amountToMove);
+           Property propertyToFind=tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
+           Integer indexToCompare=tablero.getFreeCells().indexOf(propertyToFind);
+           for (Label label: labels){
+               if(labels.indexOf(label)==indexToCompare){
+                   label.setText("J1");
+               }
+               else {
+                   label.setText("");
+               }
+           }
+        }
     }
-    Label[] labels= new Label[]{label, label1, label2, label3, label4, label5, label6, label7, label8, label9, label10,label11,label12,label13,label14,label15,label16,label17,label8,label9,label20,label21,label22,label23,label24,label25,label26,label27,label28,label29,label30,label31,label32,label33,label34,label35,label36,label37,label38,label39};
-
-
-
-
 }

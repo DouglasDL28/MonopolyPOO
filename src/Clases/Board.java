@@ -160,4 +160,7 @@ public class Board {
         return freeCells;
     }
 
+    public Dice getDice() {
+        return dice;
+    }
 }
