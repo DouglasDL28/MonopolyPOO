@@ -111,7 +111,7 @@ public class Controller {
            Integer amountToMove= tablero.getDice().roll();
            playerToMove.move(amountToMove);
            Property propertyToFind=tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
-           Integer indexToCompare=tablero.getFreeCells().indexOf(propertyToFind);
+           Integer indexToCompare=tablero.getCells().indexOf(propertyToFind);
            for (Label label: labels){
                if(labels.indexOf(label)==indexToCompare){
                    label.setText("J1");
