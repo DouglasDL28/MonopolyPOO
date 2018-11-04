@@ -1,5 +1,7 @@
 package Clases;
 
+import java.util.ArrayList;
+
 public class PrivateProperty extends Property {
     private String Color;
     private int BuyingPrice;

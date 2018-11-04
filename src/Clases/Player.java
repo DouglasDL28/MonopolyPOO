@@ -3,6 +3,7 @@ package Clases;
 import java.util.ArrayList;
 
 public class Player {
+    private Integer ID;
     private Integer Xaxis;
     private Integer Yaxis;
     private Integer money;
@@ -10,9 +11,10 @@ public class Player {
     private Boolean inPrison;
 
 
-    public Player() {
-        Xaxis = 0;
-        Yaxis = 0;
+    public Player(Integer ID) {
+        this.ID = ID;
+        this.Xaxis = 0;
+        this.Yaxis = 0;
         this.money = 500;
         this.playerProperties = new ArrayList<PrivateProperty>();
         this.inPrison = false;
