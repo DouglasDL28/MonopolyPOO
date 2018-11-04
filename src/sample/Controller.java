@@ -107,11 +107,11 @@ public class Controller {
 
     public void move(ActionEvent event){
         if(tablero.getPlayerOneTurn()){
-           Player playerToMove=tablero.getPlayers().get(0);
-           Integer amountToMove= tablero.getDice().roll();
+           Player playerToMove = tablero.getPlayers().get(0);
+           Integer amountToMove = tablero.getDice().roll();
            playerToMove.move(amountToMove);
-           Property propertyToFind=tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
-           Integer indexToCompare=tablero.getCells().indexOf(propertyToFind);
+           Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
+           Integer indexToCompare = tablero.getCells().indexOf(propertyToFind);
            for (Label label: labels){
                if(labels.indexOf(label)==indexToCompare){
                    label.setText("J1");
