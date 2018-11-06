@@ -101,9 +101,48 @@ public class Controller {
     public void initialize() { }
 
     Board tablero = new Board();
-    ArrayList<Label>labels= new ArrayList<Label>(){{
-        add(label); add(label1); add(label2); add(label3); add(label4); add(label5); add(label6); add(label7); add(label8); add(label9); add(label10);add(label11);add(label12);add(label13);add(label14);add(label15);add(label16);add(label17);add(label8);add(label9);add(label20);add(label21);add(label22);add(label23);add(label24);add(label25);add(label26);add(label27);add(label28);add(label29);add(label30);add(label31);add(label32);add(label33);add(label34);add(label35);add(label36);add(label37);add(label38);add(label39);
-    }};
+    ArrayList<Label> labels= new ArrayList<>(){{
+        add(0,label);
+        add(1,label1);
+        add(2,label2);
+        add(3,label3);
+        add(4,label4);
+        add(5,label5);
+        add(6,label6);
+        add(7,label7);
+        add(8,label8);
+        add(9,label9);
+        add(10,label10);
+        add(11,label11);
+        add(12,label12);
+        add(13,label13);
+        add(14,label14);
+        add(15,label15);
+        add(16,label16);
+        add(17,label17);
+        add(18,label8);
+        add(19,label9);
+        add(20,label20);
+        add(21,label21);
+        add(22,label22);
+        add(23,label23);
+        add(24,label24);
+        add(25,label25);
+        add(26,label26);
+        add(27,label27);
+        add(28,label28);
+        add(29,label29);
+        add(30,label30);
+        add(31,label31);
+        add(32,label32);
+        add(33,label33);
+        add(34,label34);
+        add(35,label35);
+        add(36,label36);
+        add(37,label37);
+        add(38,label38);
+        add(39,label39);
+}};
 
     public void move(ActionEvent event){
         if(tablero.getPlayerOneTurn()){
@@ -113,12 +152,14 @@ public class Controller {
            Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
            Integer indexToCompare = tablero.getCells().indexOf(propertyToFind);
            for (Label label: labels){
+               if(label!=null){
+                   System.out.println("vamos bien");
                if(labels.indexOf(label)==indexToCompare){
                    label.setText("J1");
                }
                else {
-                   label.setText("");
-               }
+                   label.setText(" ");
+               }}else{System.out.println("vamos mal");}
            }
         }
     }
