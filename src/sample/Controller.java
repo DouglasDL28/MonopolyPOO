@@ -112,12 +112,13 @@ public class Controller {
            playerToMove.move(amountToMove);
            Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
            Integer indexToCompare = tablero.getCells().indexOf(propertyToFind);
-           for (Label label: labels){
-               if(labels.indexOf(label)==indexToCompare){
-                   label.setText("J1");
+           for (int i =0; i<39; i++){
+               if(i== indexToCompare){
+                   Label labelToChange = labels.get(i);
+                   labelToChange.setText("J1");
                }
                else {
-                   label.setText("");
+                   labels.get(i).setText(" ");
                }
            }
         }
