@@ -13,7 +13,6 @@ import java.util.*;
 public class Controller {
 
 
-
     @FXML
     Label label;
     @FXML
@@ -95,72 +94,88 @@ public class Controller {
     @FXML
     Label label39;
     @FXML
+    Label label40;
+    @FXML
+    Label label41;
+    @FXML
     Button moveButton;
 
-    @FXML
-    public void initialize() { }
-
     Board tablero = new Board();
-    ArrayList<Label> labels= new ArrayList<>(){{
-        add(0,label);
-        add(1,label1);
-        add(2,label2);
-        add(3,label3);
-        add(4,label4);
-        add(5,label5);
-        add(6,label6);
-        add(7,label7);
-        add(8,label8);
-        add(9,label9);
-        add(10,label10);
-        add(11,label11);
-        add(12,label12);
-        add(13,label13);
-        add(14,label14);
-        add(15,label15);
-        add(16,label16);
-        add(17,label17);
-        add(18,label8);
-        add(19,label9);
-        add(20,label20);
-        add(21,label21);
-        add(22,label22);
-        add(23,label23);
-        add(24,label24);
-        add(25,label25);
-        add(26,label26);
-        add(27,label27);
-        add(28,label28);
-        add(29,label29);
-        add(30,label30);
-        add(31,label31);
-        add(32,label32);
-        add(33,label33);
-        add(34,label34);
-        add(35,label35);
-        add(36,label36);
-        add(37,label37);
-        add(38,label38);
-        add(39,label39);
-}};
 
-    public void move(ActionEvent event){
-        if(tablero.getPlayerOneTurn()){
-           Player playerToMove = tablero.getPlayers().get(0);
-           Integer amountToMove = tablero.getDice().roll();
-           playerToMove.move(amountToMove);
-           Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(),playerToMove.getYaxis());
-           Integer indexToCompare = tablero.getCells().indexOf(propertyToFind);
-           for (Label label: labels){
-               if(label!=null){
-                   System.out.println("vamos bien");
-               if(labels.indexOf(label)==indexToCompare){
-                   label.setText("J1");
-               }
-               else {
-                   label.setText(" ");
-               }}else{System.out.println("vamos mal");}
-           }
+    ArrayList<Label> labels = new ArrayList<>();
+
+    @FXML
+    public void initialize() {
+        labels.add(0, label);
+        labels.add(1, label1);
+        labels.add(2, label2);
+        labels.add(3, label3);
+        labels.add(4, label4);
+        labels.add(5, label5);
+        labels.add(6, label6);
+        labels.add(7, label7);
+        labels.add(8, label8);
+        labels.add(9, label9);
+        labels.add(10, label10);
+        labels.add(11, label11);
+        labels.add(12, label12);
+        labels.add(13, label13);
+        labels.add(14, label14);
+        labels.add(15, label15);
+        labels.add(16, label16);
+        labels.add(17, label17);
+        labels.add(18, label8);
+        labels.add(19, label9);
+        labels.add(20, label20);
+        labels.add(21, label21);
+        labels.add(22, label22);
+        labels.add(23, label23);
+        labels.add(24, label24);
+        labels.add(25, label25);
+        labels.add(26, label26);
+        labels.add(27, label27);
+        labels.add(28, label28);
+        labels.add(29, label29);
+        labels.add(30, label30);
+        labels.add(31, label31);
+        labels.add(32, label32);
+        labels.add(33, label33);
+        labels.add(34, label34);
+        labels.add(35, label35);
+        labels.add(36, label36);
+        labels.add(37, label37);
+        labels.add(38, label38);
+        labels.add(39, label39);
+        labels.add(40, label40);
+        labels.add(41, label41);
+    }
+
+    public void move (ActionEvent event) {
+        if (tablero.getPlayerOneTurn()) {
+            Player playerToMove = tablero.getPlayers().get(0);
+            int amountToMove = tablero.getDice().roll();
+            playerToMove.move(amountToMove);
+            Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
+            int indexToCompare = tablero.getCells().indexOf(propertyToFind);
+            for (int i = 0; i < labels.size(); i++) {
+                if (i == indexToCompare) {
+                    Label labelToChange = labels.get(i);
+                    labelToChange.setText("J1");
+                }
+            }
+        } else {
+            Player playerToMove = tablero.getPlayers().get(1);
+            int amountToMove = tablero.getDice().roll();
+            playerToMove.move(amountToMove);
+            Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
+            int indexToCompare = tablero.getCells().indexOf(propertyToFind);
+            for (int i = 0; i < labels.size(); i++) {
+                if (i == indexToCompare) {
+                    Label labelToChange = labels.get(i);
+                    labelToChange.setText("J2");
+                }
+            }
+
         }
     }
 }
