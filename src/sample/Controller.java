@@ -7,6 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 
 import java.util.*;
 
@@ -99,6 +100,15 @@ public class Controller {
     Label label41;
     @FXML
     Button moveButton;
+    @FXML
+    Button buyButton;
+    @FXML
+    Button endTurnButton;
+    @FXML
+    TableView PropertiesPLayer1;
+    @FXML
+    TableView PropertiesPlayer2;
+
 
     Board tablero = new Board();
 
@@ -148,6 +158,7 @@ public class Controller {
         labels.add(39, label39);
         labels.add(40, label40);
         labels.add(41, label41);
+        labels.get(0).setText("J1  J2");
     }
 
     public void move (ActionEvent event) {
@@ -162,6 +173,10 @@ public class Controller {
                     Label labelToChange = labels.get(i);
                     labelToChange.setText("J1");
                 }
+                else{
+                    Label labelToChange = labels.get(i);
+                    labelToChange.setText("");
+                }
             }
         } else {
             Player playerToMove = tablero.getPlayers().get(1);
@@ -174,8 +189,21 @@ public class Controller {
                     Label labelToChange = labels.get(i);
                     labelToChange.setText("J2");
                 }
+                else{
+                    Label labelToChange = labels.get(i);
+                    labelToChange.setText("");
+                }
             }
 
         }
+    }
+    public void buy(ActionEvent event){
+        if (tablero.getPlayerOneTurn()){
+            Player playerToBuy = tablero.getPlayers().get(0);
+            Property propertyToBuy = tablero.findPropertybyIndex(playerToBuy.getXaxis(), playerToBuy.getYaxis());
+        }
+    }
+    public void endTurn(ActionEvent event){
+        tablero.changeTurn();
     }
 }

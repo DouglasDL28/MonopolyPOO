@@ -169,6 +169,7 @@ public class Board {
         return null;
     }
 
+
     public ArrayList<Player> getPlayers() {
         return players;
     } //Obtener los jugadores.
