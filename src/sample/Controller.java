@@ -109,7 +109,6 @@ public class Controller {
     @FXML
     TableView PropertiesPlayer2;
 
-
     Board tablero = new Board();
 
     ArrayList<Label> labels = new ArrayList<>();
@@ -134,8 +133,8 @@ public class Controller {
         labels.add(15, label15);
         labels.add(16, label16);
         labels.add(17, label17);
-        labels.add(18, label8);
-        labels.add(19, label9);
+        labels.add(18, label18);
+        labels.add(19, label19);
         labels.add(20, label20);
         labels.add(21, label21);
         labels.add(22, label22);
