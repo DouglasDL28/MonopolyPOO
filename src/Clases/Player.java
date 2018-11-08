@@ -13,7 +13,7 @@ public class Player {
 
     public Player(Integer ID) {
         this.ID = ID;
-        this.Xaxis = 0;
+        this.Xaxis = 10;
         this.Yaxis = 0;
         this.money = 500;
         this.playerProperties = new ArrayList<PrivateProperty>();

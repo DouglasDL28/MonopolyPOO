@@ -169,6 +169,15 @@ public class Board {
         return null;
     }
 
+    public PrivateProperty findPrivatePropertybyIndex (Integer X, Integer Y) {
+        for (PrivateProperty property : freeCells) {
+            if (property.getRow() == Y && property.getColumn() == X) {
+                return property;
+            }
+        }
+        return null;
+    }
+
 
     public ArrayList<Player> getPlayers() {
         return players;
