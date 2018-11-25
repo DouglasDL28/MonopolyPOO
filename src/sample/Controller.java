@@ -242,5 +242,6 @@ public class Controller {
     public void endTurn(ActionEvent event){
         tablero.changeTurn();
         moveButton.setDisable(false);
+        buyButton.setDisable(false);
     }
 }
