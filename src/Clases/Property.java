@@ -5,7 +5,7 @@ public class Property {
     private int[] position = new int[2];
 
     public Property (String name,int x, int y) {
-        this.name=name;
+        this.name = name;
         this.position[0] = x;
         this.position[1]= y;
     }
@@ -18,6 +18,11 @@ public class Property {
         return Row;
     }
     public String getName(){
+        return this.name;
+    }
+
+    @Override
+    public String toString() {
         return this.name;
     }
 }

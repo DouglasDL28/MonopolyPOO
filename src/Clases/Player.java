@@ -1,5 +1,8 @@
 package Clases;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.util.ArrayList;
 
 public class Player {
@@ -7,7 +10,7 @@ public class Player {
     private Integer Xaxis;
     private Integer Yaxis;
     private Integer money;
-    private ArrayList<PrivateProperty> playerProperties;
+    private ObservableList<PrivateProperty> playerProperties;
     private Boolean inPrison;
 
 
@@ -16,7 +19,7 @@ public class Player {
         this.Xaxis = 10;
         this.Yaxis = 0;
         this.money = 500;
-        this.playerProperties = new ArrayList<PrivateProperty>();
+        this.playerProperties = FXCollections.observableArrayList();
         this.inPrison = false;
     }
 
@@ -26,7 +29,7 @@ public class Player {
 
     public Integer getMoney() { return money; }
 
-    public ArrayList<PrivateProperty> getProperties() { return playerProperties; }
+    public ObservableList<PrivateProperty> getProperties() { return playerProperties; }
 
     public void buyProperty(PrivateProperty property) {
         property.buy();

@@ -24,8 +24,4 @@ public class PrivateProperty extends Property {
 
     public int getBuyingPrice (){return this.BuyingPrice;}
 
-    public void buyHouse () {}
-
-    public void buyHotel () { }
-
 }
