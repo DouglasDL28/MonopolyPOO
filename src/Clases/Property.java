@@ -1,13 +1,17 @@
 package Clases;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Property {
-    private String name;
+    private SimpleStringProperty name;
     private int[] position = new int[2];
 
     public Property (String name,int x, int y) {
-        this.name = name;
+        this.name = new SimpleStringProperty();
         this.position[0] = x;
         this.position[1]= y;
+
+        this.name.set(name);
     }
     public int getColumn(){
         int Column = this.position[0];
@@ -18,11 +22,11 @@ public class Property {
         return Row;
     }
     public String getName(){
-        return this.name;
+        return this.name.get();
     }
 
     @Override
     public String toString() {
-        return this.name;
+        return this.name.get();
     }
 }

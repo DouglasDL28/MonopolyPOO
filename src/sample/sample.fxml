@@ -565,14 +565,14 @@
             </SplitPane>
          </children>
         </GridPane>
-        <TableView fx:id="PropertiesPLayer1" prefHeight="654.0" prefWidth="136.0" GridPane.columnIndex="1">
+        <TableView fx:id="PlayerOneTable" prefHeight="654.0" prefWidth="136.0" GridPane.columnIndex="1">
             <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="PlayerOneProperties" prefWidth="75.0" text="C1" />
             </columns>
         </TableView>
-        <TableView fx:id="PropertiesPlayer2" prefHeight="656.0" prefWidth="244.0" GridPane.columnIndex="6">
+        <TableView fx:id="PlayerTwoTable" prefHeight="656.0" prefWidth="244.0" GridPane.columnIndex="6">
             <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn fx:id="PlayerTwoProperties" prefWidth="75.0" text="C1" />
             </columns>
         </TableView>
     </children>

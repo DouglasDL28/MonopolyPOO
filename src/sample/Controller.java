@@ -7,7 +7,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.*;
 
@@ -105,9 +107,15 @@ public class Controller {
     @FXML
     Button endTurnButton;
     @FXML
-    TableView PropertiesPLayer1;
+    TableView PlayerOneTable;
     @FXML
-    TableView PropertiesPlayer2;
+    TableView PlayerTwoTable;
+
+    @FXML
+    TableColumn PlayerOneProperties;
+
+    @FXML
+    TableColumn PlayerTwoProperties;
 
     Board tablero = new Board();
 
@@ -158,6 +166,18 @@ public class Controller {
         labels.add(40, label40);
         labels.add(41, label41);
         labels.get(0).setText("J1  J2");
+
+        PlayerOneProperties.setCellValueFactory(
+                new PropertyValueFactory<Property, String>("name")
+        );
+
+        PlayerTwoProperties.setCellValueFactory(
+                new PropertyValueFactory<Property, String>("name")
+        );
+
+        PlayerOneTable.setItems(tablero.getPlayers().get(0).getProperties());
+
+        PlayerTwoTable.setItems(tablero.getPlayers().get(1).getProperties());
     }
 
     public void move (ActionEvent event) {
