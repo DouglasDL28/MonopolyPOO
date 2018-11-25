@@ -195,28 +195,32 @@ public class Controller {
             }
 
         }
+        moveButton.setDisable(true);
     }
     public void buy(ActionEvent event){
         if (tablero.getPlayerOneTurn()){
             Player playerToBuy = tablero.getPlayers().get(0);
             Property propertyToBuy = tablero.findPrivatePropertybyIndex(playerToBuy.getXaxis(),playerToBuy.getYaxis());
             if (propertyToBuy!= null){
+                buyButton.setDisable(false);
                 tablero.buyPropertyToBoard((PrivateProperty) propertyToBuy,playerToBuy);
                 System.out.println("Se logro comprar una propiedad");
                 System.out.println(playerToBuy.getMoney());
-            }else{System.out.println("No se logro comprar");}
+            }else{buyButton.setDisable(true);}
         }
         else {
             Player playerToBuy = tablero.getPlayers().get(1);
             Property propertyToBuy = tablero.findPrivatePropertybyIndex(playerToBuy.getXaxis(),playerToBuy.getYaxis());
             if (propertyToBuy!= null){
+                buyButton.setDisable(false);
                 tablero.buyPropertyToBoard((PrivateProperty) propertyToBuy,playerToBuy);
                 System.out.println("Se logro comprar una propiedad");
                 System.out.println(playerToBuy.getMoney());
-            }else{System.out.println("No se logro comprar");}
+            }else{buyButton.setDisable(true);}
         }
     }
     public void endTurn(ActionEvent event){
         tablero.changeTurn();
+        moveButton.setDisable(false);
     }
 }
