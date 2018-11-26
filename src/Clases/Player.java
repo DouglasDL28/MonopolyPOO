@@ -6,10 +6,10 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 
 public class Player {
-    private Integer ID;
-    private Integer Xaxis;
-    private Integer Yaxis;
-    private Integer money;
+    private int ID;
+    private int Xaxis;
+    private int Yaxis;
+    private int money;
     private ObservableList<PrivateProperty> playerProperties;
     private Boolean inPrison;
 
@@ -23,11 +23,15 @@ public class Player {
         this.inPrison = false;
     }
 
-    public Integer getXaxis() { return Xaxis; }
+    public int getXaxis() { return this.Xaxis; }
 
-    public Integer getYaxis() { return Yaxis; }
+    public int getYaxis() { return this.Yaxis; }
 
-    public Integer getMoney() { return money; }
+    public int getMoney() { return this.money; }
+
+    public void substractMoney (int amount) { this.money -= amount; }
+
+    public void addMoney (int amount) { this.money += amount; }
 
     public ObservableList<PrivateProperty> getProperties() { return playerProperties; }
 
@@ -59,5 +63,6 @@ public class Player {
             else if (this.Xaxis == 10 && this.Yaxis > 0) {this.Yaxis -= 1;} // Si está en derecha bajar.
             if(this.Yaxis == 0 && this.Xaxis == 10) {this.money += 200;} // Si pasa por la casilla GO, gana Q.200.
         }
+
     }
 }

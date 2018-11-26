@@ -29,10 +29,12 @@ public class PrivateProperty extends Property {
 
     public int getBuyingPrice (){return this.BuyingPrice.get();}
 
+    public int getStayingPrice (){return this.StayingPrice.get();};
+
     @Override
     public String toString() {
-        return "BuyingPrice: " + BuyingPrice + "\n" +
-                ", StayingPrice: " + StayingPrice + "\n" +
+        return "BuyingPrice: " + BuyingPrice.get() + "\n" +
+                ", StayingPrice: " + StayingPrice.get() + "\n" +
                 ", Owned " + Owned ;
     }
 }
