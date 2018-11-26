@@ -15,7 +15,6 @@ import java.util.*;
 
 public class Controller {
 
-
     @FXML
     Label label;
     @FXML
