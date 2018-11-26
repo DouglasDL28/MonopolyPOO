@@ -107,6 +107,8 @@ public class Controller {
     @FXML
     Button endTurnButton;
     @FXML
+    Button sellButton;
+    @FXML
     TableView PlayerOneTable;
     @FXML
     TableView PlayerTwoTable;
@@ -250,5 +252,21 @@ public class Controller {
         tablero.changeTurn();
         moveButton.setDisable(false);
         buyButton.setDisable(false);
+    }
+    public void sell(ActionEvent event){
+        if (tablero.getPlayerOneTurn()){
+            Player playerToSell = tablero.getPlayers().get(0);
+            PrivateProperty selectedProperty = (PrivateProperty) PlayerOneTable.getSelectionModel().getSelectedItem();
+            if (selectedProperty!= null){
+                tablero.sellPropertyToBoard(selectedProperty,playerToSell);
+            }else{System.out.println("No se selecciono una propiedad del jugador 1");}
+        }
+        else{
+            Player playerToSell = tablero.getPlayers().get(1);
+            PrivateProperty selectedProperty = (PrivateProperty) PlayerTwoTable.getSelectionModel().getSelectedItem();
+            if (selectedProperty!= null){
+                tablero.sellPropertyToBoard(selectedProperty,playerToSell);
+            }else{System.out.println("No se selecciono una propiedad del jugador 1");}
+        }
     }
 }
