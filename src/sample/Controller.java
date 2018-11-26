@@ -26,8 +26,7 @@ public class Controller {
     Label label3;
     @FXML
     Label label4;
-    @FXML
-    Label label5;
+
     @FXML
     Label label6;
     @FXML
@@ -70,8 +69,7 @@ public class Controller {
     Label label25;
     @FXML
     Label label26;
-    @FXML
-    Label label27;
+
     @FXML
     Label label28;
     @FXML
@@ -137,7 +135,6 @@ public class Controller {
         labels.add(2, label2);
         labels.add(3, label3);
         labels.add(4, label4);
-        labels.add(5, label5);
         labels.add(6, label6);
         labels.add(7, label7);
         labels.add(8, label8);
@@ -159,7 +156,6 @@ public class Controller {
         labels.add(24, label24);
         labels.add(25, label25);
         labels.add(26, label26);
-        labels.add(27, label27);
         labels.add(28, label28);
         labels.add(29, label29);
         labels.add(30, label30);

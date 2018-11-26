@@ -52,7 +52,6 @@
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             </columnConstraints>
             <rowConstraints>
@@ -73,7 +72,7 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="-7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="ROYALBLUE" height="16.0" layoutX="-7.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
                      </children></AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -85,7 +84,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="-6.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="ROYALBLUE" height="20.0" layoutX="-6.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -97,7 +96,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -109,7 +108,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="ROYALBLUE" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -121,7 +120,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -133,19 +132,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
-                     </children></AnchorPane>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <Label fx:id="label5" layoutX="15.0" layoutY="12.0" text="Label" />
-                     </children></AnchorPane>
-               </items>
-            </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
-               <items>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="23.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="23.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -153,11 +140,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PURPLE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -165,11 +152,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="22.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -177,11 +164,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10" GridPane.rowIndex="10">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="-5.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="PURPLE" height="26.0" layoutX="-5.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="79.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -193,7 +180,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -205,7 +192,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-7.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="21.0" layoutX="-7.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -217,7 +204,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -229,7 +216,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="22.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -241,7 +228,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="25.0" layoutX="-7.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane fx:id="label50" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -253,19 +240,7 @@
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="23.0" layoutX="-8.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
-                     </children></AnchorPane>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <Label fx:id="label27" layoutX="15.0" layoutY="12.0" text="Label" />
-                     </children></AnchorPane>
-               </items>
-            </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7">
-               <items>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -273,11 +248,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="7">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="22.0" layoutX="-8.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -285,11 +260,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="8">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="26.0" layoutX="-7.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="26.0" layoutX="-7.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="81.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -297,11 +272,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10">
+            <SplitPane dividerPositions="0.24561403508771928" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="9">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="21.0" layoutX="-8.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
@@ -317,7 +292,7 @@
                      </children></AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff5a00" height="67.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
                      </children></AnchorPane>
               </items>
             </SplitPane>
@@ -329,7 +304,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff5a00" height="85.0" layoutX="-7.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
                      </children></AnchorPane>
                </items>
             </SplitPane>
@@ -341,7 +316,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="85.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -354,7 +329,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff5a00" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -367,7 +342,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -380,7 +355,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPPINK" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -393,7 +368,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPPINK" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -406,7 +381,7 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="67.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                      </children>
                   </AnchorPane>
                </items>
@@ -419,16 +394,16 @@
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" layoutX="-4.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DEEPPINK" height="60.0" layoutX="-4.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
                      </children>
                   </AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -436,11 +411,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="66.0" layoutX="-5.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -448,11 +423,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="3">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -460,11 +435,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="-6.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="65.0" layoutX="-6.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -472,11 +447,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="5">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="5">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -484,11 +459,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="6">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="67.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -496,11 +471,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="7">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="-10.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMBLUE" height="65.0" layoutX="-10.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -508,11 +483,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="8">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="8">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="66.0" layoutX="-6.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -520,11 +495,11 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="11" GridPane.rowIndex="9">
+            <SplitPane dividerPositions="0.25806451612903225" prefHeight="160.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="9">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MEDIUMBLUE" height="66.0" layoutX="-7.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
                      </children></AnchorPane>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -547,10 +522,11 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
                         <Label fx:id="label21" layoutX="14.0" layoutY="12.0" />
+                        <Label fx:id="lable21" layoutX="18.0" layoutY="11.0" text="Label" />
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="11">
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
@@ -559,7 +535,7 @@
                      </children></AnchorPane>
                </items>
             </SplitPane>
-            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="11" GridPane.rowIndex="10">
+            <SplitPane dividerPositions="0.2631578947368421" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" GridPane.columnIndex="10" GridPane.rowIndex="10">
                <items>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
