@@ -156,7 +156,7 @@ public class Board {
     public void propertyExchange (PrivateProperty property, Player player1, Player player2) {
         if (player1.getProperties().contains(property)) {
             player1.sellProperty(property);
-            player1.sellProperty(property);
+            player2.buyProperty(property);
         }
     } // Intercambio de una propiedad entre jugadores.
 

@@ -11,10 +11,10 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.security.PrivilegedExceptionAction;
 import java.util.*;
 
 public class Controller {
-
 
     @FXML
     Label label;
@@ -107,8 +107,6 @@ public class Controller {
     @FXML
     Button endTurnButton;
     @FXML
-    Button sellButton;
-    @FXML
     TableView PlayerOneTable;
     @FXML
     TableView PlayerTwoTable;
@@ -124,6 +122,9 @@ public class Controller {
 
     @FXML
     Label Position2;
+
+    @FXML
+    Button sellPropertyButton;
 
     Board tablero = new Board();
 
@@ -195,6 +196,8 @@ public class Controller {
             playerToMove.move(amountToMove);
             Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
             int indexToCompare = tablero.getCells().indexOf(propertyToFind);
+
+
             for (int i = 0; i < labels.size(); i++) {
                 if (i == indexToCompare) {
                     Label labelToChange = labels.get(i);
@@ -204,7 +207,16 @@ public class Controller {
                     Label labelToChange = labels.get(i);
                     labelToChange.setText("");
                 }
+
             }
+
+            PrivateProperty propertyToCheck = tablero.findPrivatePropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
+            if (tablero.getPlayers().get(1).getProperties().contains(propertyToCheck)){
+                int stayingCost = propertyToCheck.getStayingPrice();
+                playerToMove.substractMoney(stayingCost);
+                tablero.getPlayers().get(1).addMoney(stayingCost);
+            }
+
             Position1.setText(propertyToFind.toString());
         } else {
             Player playerToMove = tablero.getPlayers().get(1);
@@ -222,6 +234,14 @@ public class Controller {
                     labelToChange.setText("");
                 }
             }
+
+            PrivateProperty propertyToCheck = tablero.findPrivatePropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
+            if (tablero.getPlayers().get(0).getProperties().contains(propertyToCheck)){
+                int stayingCost = propertyToCheck.getStayingPrice();
+                playerToMove.substractMoney(stayingCost);
+                tablero.getPlayers().get(0).addMoney(stayingCost);
+            }
+
             Position2.setText(propertyToFind.toString());
         }
         moveButton.setDisable(true);
@@ -253,20 +273,10 @@ public class Controller {
         moveButton.setDisable(false);
         buyButton.setDisable(false);
     }
-    public void sell(ActionEvent event){
+
+    public void sell(ActionEvent event) {
         if (tablero.getPlayerOneTurn()){
-            Player playerToSell = tablero.getPlayers().get(0);
-            PrivateProperty selectedProperty = (PrivateProperty) PlayerOneTable.getSelectionModel().getSelectedItem();
-            if (selectedProperty!= null){
-                tablero.sellPropertyToBoard(selectedProperty,playerToSell);
-            }else{System.out.println("No se selecciono una propiedad del jugador 1");}
-        }
-        else{
-            Player playerToSell = tablero.getPlayers().get(1);
-            PrivateProperty selectedProperty = (PrivateProperty) PlayerTwoTable.getSelectionModel().getSelectedItem();
-            if (selectedProperty!= null){
-                tablero.sellPropertyToBoard(selectedProperty,playerToSell);
-            }else{System.out.println("No se selecciono una propiedad del jugador 1");}
+
         }
     }
 }
