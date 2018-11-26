@@ -117,6 +117,12 @@ public class Controller {
     @FXML
     TableColumn PlayerTwoProperties;
 
+    @FXML
+    Label Position1;
+
+    @FXML
+    Label Position2;
+
     Board tablero = new Board();
 
     ArrayList<Label> labels = new ArrayList<>();
@@ -197,6 +203,7 @@ public class Controller {
                     labelToChange.setText("");
                 }
             }
+            Position1.setText(propertyToFind.toString());
         } else {
             Player playerToMove = tablero.getPlayers().get(1);
             int amountToMove = tablero.getDice().roll();
@@ -213,7 +220,7 @@ public class Controller {
                     labelToChange.setText("");
                 }
             }
-
+            Position2.setText(propertyToFind.toString());
         }
         moveButton.setDisable(true);
     }
