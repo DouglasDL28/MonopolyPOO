@@ -556,13 +556,15 @@
                 <TableColumn fx:id="PlayerTwoProperties" prefWidth="129.0" text="Propiedades J2:" />
             </columns>
         </TableView>
-      <Label fx:id="Position1" prefHeight="48.0" prefWidth="156.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5">
+      <Label fx:id="Position1" prefHeight="48.0" prefWidth="156.0" text="Posición" GridPane.columnIndex="1" GridPane.rowIndex="5">
          <GridPane.margin>
             <Insets />
          </GridPane.margin></Label>
-      <Label fx:id="Position2" prefHeight="56.0" prefWidth="130.0" text="Label" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-      <Label layoutX="966.0" layoutY="739.0" prefHeight="25.0" prefWidth="150.0" text="Posición Jugador 1:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label prefHeight="31.0" prefWidth="130.0" text="Posición Jugador 2:" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+      <Label fx:id="Position2" prefHeight="56.0" prefWidth="130.0" text="Posición" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+      <Label layoutX="966.0" layoutY="739.0" prefHeight="25.0" prefWidth="150.0" text="Info Jugador 1:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label prefHeight="31.0" prefWidth="130.0" text="Info Jugador 2:" GridPane.columnIndex="6" GridPane.rowIndex="4" />
       <Button fx:id="sellPropertyButton" mnemonicParsing="false" onAction="#sell" prefHeight="27.0" prefWidth="106.0" text="Sell Property" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+      <Label fx:id="PlayerOneMoney" prefHeight="17.0" prefWidth="59.0" text="Dinero" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="PlayerTwoMoney" prefHeight="17.0" prefWidth="90.0" text="Dinero" GridPane.columnIndex="6" GridPane.rowIndex="6" />
     </children>
 </GridPane>

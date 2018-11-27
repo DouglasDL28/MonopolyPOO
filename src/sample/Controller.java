@@ -11,6 +11,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import javax.annotation.processing.Generated;
 import java.security.PrivilegedExceptionAction;
 import java.util.*;
 
@@ -122,6 +123,12 @@ public class Controller {
     @FXML
     Button sellPropertyButton;
 
+    @FXML
+    Label PlayerOneMoney;
+
+    @FXML
+    Label PlayerTwoMoney;
+
     Board tablero = new Board();
 
     ArrayList<Label> labels = new ArrayList<>();
@@ -182,6 +189,7 @@ public class Controller {
         PlayerOneTable.setItems(tablero.getPlayers().get(0).getProperties());
 
         PlayerTwoTable.setItems(tablero.getPlayers().get(1).getProperties());
+
     }
 
     public void move (ActionEvent event) {
@@ -192,7 +200,6 @@ public class Controller {
             Property propertyToFind = tablero.findPropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
             int indexToCompare = tablero.getCells().indexOf(propertyToFind);
 
-
             for (int i = 0; i < labels.size(); i++) {
                 if (i == indexToCompare) {
                     Label labelToChange = labels.get(i);
@@ -202,7 +209,6 @@ public class Controller {
                     Label labelToChange = labels.get(i);
                     labelToChange.setText("");
                 }
-
             }
 
             PrivateProperty propertyToCheck = tablero.findPrivatePropertybyIndex(playerToMove.getXaxis(), playerToMove.getYaxis());
@@ -250,6 +256,7 @@ public class Controller {
                 tablero.buyPropertyToBoard((PrivateProperty) propertyToBuy,playerToBuy);
                 System.out.println("Se logro comprar una propiedad");
                 System.out.println(playerToBuy.getMoney());
+                PlayerOneMoney.setText(Integer.toString(tablero.getPlayers().get(0).getMoney()));
             }else{buyButton.setDisable(true);}
         }
         else {
@@ -260,6 +267,7 @@ public class Controller {
                 tablero.buyPropertyToBoard((PrivateProperty) propertyToBuy,playerToBuy);
                 System.out.println("Se logro comprar una propiedad");
                 System.out.println(playerToBuy.getMoney());
+                PlayerTwoMoney.setText(Integer.toString(tablero.getPlayers().get(1).getMoney()));
             }else{buyButton.setDisable(true);}
         }
     }
@@ -274,6 +282,7 @@ public class Controller {
             PrivateProperty selectedProperty = (PrivateProperty) PlayerOneTable.getSelectionModel().getSelectedItem();
             if (selectedProperty!= null){
                 tablero.sellPropertyToBoard(selectedProperty,playerToSell);
+                PlayerOneMoney.setText(Integer.toString(tablero.getPlayers().get(0).getMoney()));
             }else{System.out.println("No se selecciono una propiedad del jugador 1");}
         }
         else{
@@ -281,6 +290,7 @@ public class Controller {
             PrivateProperty selectedProperty = (PrivateProperty) PlayerTwoTable.getSelectionModel().getSelectedItem();
             if (selectedProperty!= null){
                 tablero.sellPropertyToBoard(selectedProperty,playerToSell);
+                PlayerTwoMoney.setText(Integer.toString(tablero.getPlayers().get(1).getMoney()));
             }else{System.out.println("No se selecciono una propiedad del jugador 2");}
         }
     }
