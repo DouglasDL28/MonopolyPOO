@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.shape.Rectangle?>
 
-<GridPane alignment="center" hgap="10" minHeight="-Infinity" prefHeight="809.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" minHeight="-Infinity" prefHeight="809.0" prefWidth="1099.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <columnConstraints>
         <ColumnConstraints />
         <ColumnConstraints />
@@ -522,7 +522,7 @@
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>
                         <Label fx:id="label21" layoutX="14.0" layoutY="12.0" />
-                        <Label fx:id="lable20" layoutX="18.0" layoutY="11.0" text="Label" />
+                        <Label fx:id="label20" layoutX="18.0" layoutY="11.0" text="Label" />
                      </children></AnchorPane>
                </items>
             </SplitPane>

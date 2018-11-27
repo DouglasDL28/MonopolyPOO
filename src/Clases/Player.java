@@ -44,7 +44,7 @@ public class Player {
     public void sellProperty (PrivateProperty property) {
         property.sell();
         this.playerProperties.remove(property);
-        this.money -= property.getBuyingPrice();
+        this.money += property.getBuyingPrice();
     } // Quita la propiedad y la marca como no comprada.
 
     public Boolean getInPrison() { return inPrison; }

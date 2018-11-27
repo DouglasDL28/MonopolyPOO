@@ -74,7 +74,7 @@ public class Board {
         freeCells.add(new PrivateProperty("Community Chest", 8, 0, "None", 0, 0));
         freeCells.add(new PrivateProperty("Baltic Avenue", 7, 0, "Brown", 60, 60));
         freeCells.add(new PrivateProperty("Income Tax", 6, 0, "None", 0, 200));
-        freeCells.add(new PrivateProperty("Reading Railroad", 5, 0, "None", 0, -200));
+        freeCells.add(new PrivateProperty("Reading Railroad", 5, 0, "None", 0, 200));
         freeCells.add(new PrivateProperty("Oriental Avenue", 4, 0, "Sky Blue", 100, 100));
         freeCells.add(new PrivateProperty("Chance", 3, 0, "None", 0,0));
         freeCells.add(new PrivateProperty("Vermont Avenue", 2, 0, "Sky Blue", 100, 100));

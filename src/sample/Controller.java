@@ -217,7 +217,7 @@ public class Controller {
                 playerToMove.substractMoney(stayingCost);
                 tablero.getPlayers().get(1).addMoney(stayingCost);
             }
-
+            moveButton.setDisable(true);
             Position1.setText(propertyToFind.toString());
         } else {
             Player playerToMove = tablero.getPlayers().get(1);
@@ -242,10 +242,11 @@ public class Controller {
                 playerToMove.substractMoney(stayingCost);
                 tablero.getPlayers().get(0).addMoney(stayingCost);
             }
+            moveButton.setDisable(true);
 
             Position2.setText(propertyToFind.toString());
         }
-        moveButton.setDisable(true);
+
     }
     public void buy(ActionEvent event){
         if (tablero.getPlayerOneTurn()){
